@@ -86,7 +86,6 @@ const submitForm = () => {
     };
     editIndex = null; // 重置編輯索引
   }
-  resetForm();
 };
 
 let editIndex = null;
