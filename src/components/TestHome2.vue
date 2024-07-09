@@ -34,7 +34,7 @@
       </div>
 
       <!-- 確認提交按鈕 -->
-      <v-btn type="submit" :disabled="isSubmitting">確認</v-btn>
+      <v-btn type="submit" :disabled="isSubmitting" color="primary">確認</v-btn>
     </v-form>
   </v-container>
 </template>

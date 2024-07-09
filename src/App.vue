@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- <AppBar></AppBar> -->
     <v-main>
       <v-container>
         <v-card>
@@ -19,4 +20,5 @@
 <script setup>
 import TestHome2 from "./components/TestHome2.vue";
 import TestHome3 from "./components/TestHome3.vue";
+import AppBar from "./components/AppBar.vue";
 </script>

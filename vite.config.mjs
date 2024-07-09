@@ -10,6 +10,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     Vue({
       template: { transformAssetUrls }
@@ -19,29 +20,23 @@ export default defineConfig({
     Components(),
     ViteFonts({
       google: {
-        families: [{
-          name: 'Roboto',
-          styles: 'wght@100;300;400;500;700;900',
-        }],
-      },
-    }),
+        families: [
+          {
+            name: 'Roboto',
+            styles: 'wght@100;300;400;500;700;900'
+          }
+        ]
+      }
+    })
   ],
   define: { 'process.env': {} },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
-    extensions: [
-      '.js',
-      '.json',
-      '.jsx',
-      '.mjs',
-      '.ts',
-      '.tsx',
-      '.vue',
-    ],
+    extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue']
   },
   server: {
-    port: 3000,
-  },
+    port: 3000
+  }
 })

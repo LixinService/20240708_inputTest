@@ -9,6 +9,7 @@
             outlined
             :items="['媒體購買', '廣告投放', '內容行銷']"
             :color="colors.primaryColor"
+            variant="outlined"
             required
           ></v-select>
         </v-col>
@@ -16,7 +17,7 @@
           <v-text-field
             v-model="formData.itemDirections"
             label="品項說明"
-            outlined
+            variant="outlined"
             :color="colors.primaryColor"
             required
           ></v-text-field>
